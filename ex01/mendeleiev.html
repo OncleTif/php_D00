@@ -1,13 +1,42 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<title>Mendeleiev Table</title>
 		<style>
+			.presentation {
+			position:relative;
+			width:1256px;
+			height:350px;
+			display:inline-block;
+			}
+			.quote {
+			display:inline-block;
+			width:600px;
+			position:absolute;
+			right:260px;
+			font-size:300%;
+			font-style:italic;
+			text-align:justify;
+			font-family:serif;
+			}
+			img {
+			display:inline-block;
+			position:absolute;
+			right:0px;
+			}
+			.sign {
+			text-align:right;
+			}
 			.line {
 			display:block;
 			width:1256px;
 			}
-			.rgt-part {
-float:right;
+			.rgt-part , .actinide-line, .lanthanide-line {
+			float:right;
+			}
+			.actinide-line, .lanthanide-line {
+			margin-top:20px;
 			}
 			.elem {
 			border-style: solid;
@@ -56,9 +85,23 @@ float:right;
 			.pt-metal {
 			background-color:rgb(204,204,204);
 			}
+			.lanthanide-line .elem , .lanthanide{
+			background-color:rgb(255,191,255);
+			}
+			.actinide-line .elem , .actinide{
+			background-color:rgb(255,153,204);
+			}
+			.lanthanide-line , .actinide-line {
+			float:right;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="presentation">
+			<div class="quote">I wish to establish some sort of system not guided by chance but by some sort of definite and exact principle.<div class="sign">Dmitri Mendeleiev</div></div>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/7/74/%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_%D0%9C%D0%B5%D0%BD%D0%B4%D0%B5%D0%BB%D0%B5%D0%B5%D0%B2_2.jpg" alt="picture of Dmitri Mendeleiev">
+
+		</div>
 		<div class="line">
 			<div class="elem diatomic-non-metal">
 				<div class="atomic">1.0079</div>
@@ -66,11 +109,11 @@ float:right;
 				<div class="number">1</div>
 			</div>
 			<div class="rgt-part">
-			<div class="elem noble-gaz">
-				<div class="atomic">4.0026</div>
-				<div class="name">He</div>
-				<div class="number">2</div>
-			</div>
+				<div class="elem noble-gaz">
+					<div class="atomic">4.0026</div>
+					<div class="name">He</div>
+					<div class="number">2</div>
+				</div>
 			</div>
 		</div>
 		<div class="line">
@@ -85,37 +128,37 @@ float:right;
 				<div class="number">4</div>
 			</div>
 			<div class="rgt-part">
-			<div class="elem metaloid">
-				<div class="atomic">10.811</div>
-				<div class="name">B</div>
-				<div class="number">5</div>
+				<div class="elem metaloid">
+					<div class="atomic">10.811</div>
+					<div class="name">B</div>
+					<div class="number">5</div>
+				</div>
+				<div class="elem diatomic-non-metal">
+					<div class="atomic">12.011</div>
+					<div class="name">C</div>
+					<div class="number">6</div>
+				</div>
+				<div class="elem diatomic-non-metal">
+					<div class="atomic">14.007</div>
+					<div class="name">N</div>
+					<div class="number">7</div>
+				</div>
+				<div class="elem diatomic-non-metal">
+					<div class="atomic">15.999</div>
+					<div class="name">O</div>
+					<div class="number">8</div>
+				</div>
+				<div class="elem halogene">
+					<div class="atomic">18.998</div>
+					<div class="name">F</div>
+					<div class="number">9</div>
+				</div>
+				<div class="elem noble-gaz">
+					<div class="atomic">20.180</div>
+					<div class="name">Ne</div>
+					<div class="number">10</div>
+				</div>
 			</div>
-			<div class="elem diatomic-non-metal">
-				<div class="atomic">12.011</div>
-				<div class="name">C</div>
-				<div class="number">6</div>
-			</div>
-			<div class="elem diatomic-non-metal">
-				<div class="atomic">14.007</div>
-				<div class="name">N</div>
-				<div class="number">7</div>
-			</div>
-			<div class="elem diatomic-non-metal">
-				<div class="atomic">15.999</div>
-				<div class="name">O</div>
-				<div class="number">8</div>
-			</div>
-			<div class="elem halogene">
-				<div class="atomic">18.998</div>
-				<div class="name">F</div>
-				<div class="number">9</div>
-			</div>
-			<div class="elem noble-gaz">
-				<div class="atomic">20.180</div>
-				<div class="name">Ne</div>
-				<div class="number">10</div>
-			</div>
-		</div>
 		</div>
 		<div class="line">
 			<div class="elem alcaline-metal">
@@ -129,38 +172,38 @@ float:right;
 				<div class="number">12</div>
 			</div>
 			<div class="rgt-part">
-			<div class="elem pt-metal">
-				<div class="atomic">26.982</div>
-				<div class="name">Al</div>
-				<div class="number">13</div>
+				<div class="elem pt-metal">
+					<div class="atomic">26.982</div>
+					<div class="name">Al</div>
+					<div class="number">13</div>
+				</div>
+				<div class="elem metaloid">
+					<div class="atomic">28.086</div>
+					<div class="name">Si</div>
+					<div class="number">14</div>
+				</div>
+				<div class="elem diatomic-non-metal">
+					<div class="atomic">30.974</div>
+					<div class="name">P</div>
+					<div class="number">15</div>
+				</div>
+				<div class="elem diatomic-non-metal">
+					<div class="atomic">32.065</div>
+					<div class="name">S</div>
+					<div class="number">16</div>
+				</div>
+				<div class="elem halogene">
+					<div class="atomic">35.453</div>
+					<div class="name">Cl</div>
+					<div class="number">17</div>
+				</div>
+				<div class="elem noble-gaz">
+					<div class="atomic">39.948</div>
+					<div class="name">Ar</div>
+					<div class="number">18</div>
+				</div>
 			</div>
-			<div class="elem metaloid">
-				<div class="atomic">28.086</div>
-				<div class="name">Si</div>
-				<div class="number">14</div>
-			</div>
-			<div class="elem diatomic-non-metal">
-				<div class="atomic">30.974</div>
-				<div class="name">P</div>
-				<div class="number">15</div>
-			</div>
-			<div class="elem diatomic-non-metal">
-				<div class="atomic">32.065</div>
-				<div class="name">S</div>
-				<div class="number">16</div>
-			</div>
-			<div class="elem halogene">
-				<div class="atomic">35.453</div>
-				<div class="name">Cl</div>
-				<div class="number">17</div>
-			</div>
-			<div class="elem noble-gaz">
-				<div class="atomic">39.948</div>
-				<div class="name">Ar</div>
-				<div class="number">18</div>
-			</div>
-			</div>
-			</div>
+		</div>
 		<div class="line">
 			<div class="elem alcaline-metal">
 				<div class="atomic">39.098</div>
@@ -229,246 +272,246 @@ float:right;
 			</div>
 			<div class="elem metaloid">
 				<div class="atomic">
-72.64
+					72.64
 				</div>
 				<div class="name">
-Ge
+					Ge
 				</div>
 				<div class="number">
-32
+					32
 				</div>
 			</div>
 			<div class="elem metaloid">
 				<div class="atomic">
-74.922
+					74.922
 				</div>
 				<div class="name">
-As
+					As
 				</div>
 				<div class="number">
-33
+					33
 				</div>
 			</div>
 			<div class="elem diatomic-non-metal">
 				<div class="atomic">
-78.96
+					78.96
 				</div>
 				<div class="name">
-Se
+					Se
 				</div>
 				<div class="number">
-34
+					34
 				</div>
 			</div>
 			<div class="elem halogene">
 				<div class="atomic">
-79.904
+					79.904
 				</div>
 				<div class="name">
-Br
+					Br
 				</div>
 				<div class="number">
-35
+					35
 				</div>
 			</div>
 			<div class="elem noble-gaz">
 				<div class="atomic">
-83.80
+					83.80
 				</div>
 				<div class="name">
-Kr
+					Kr
 				</div>
 				<div class="number">
-36
+					36
 				</div>
 			</div>
 		</div>
 		<div class="line">
 			<div class="elem alcaline-metal">
 				<div class="atomic">
-85.468
+					85.468
 				</div>
 				<div class="name">
-Rb
+					Rb
 				</div>
 				<div class="number">
-37
+					37
 				</div>
 			</div>
 			<div class="elem earth-alcaline">
 				<div class="atomic">
-87.62
+					87.62
 				</div>
 				<div class="name">
-Sr
+					Sr
 				</div>
 				<div class="number">
-38
+					38
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-88.906
+					88.906
 				</div>
 				<div class="name">
-Y
+					Y
 				</div>
 				<div class="number">
-39
+					39
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-91.224
+					91.224
 				</div>
 				<div class="name">
-Zr
+					Zr
 				</div>
 				<div class="number">
-40
+					40
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-92.906
+					92.906
 				</div>
 				<div class="name">
-Nb
+					Nb
 				</div>
 				<div class="number">
-41
+					41
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-95.94
+					95.94
 				</div>
 				<div class="name">
-Mo
+					Mo
 				</div>
 				<div class="number">
-42
+					42
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-98
+					98
 				</div>
 				<div class="name">
-Tc
+					Tc
 				</div>
 				<div class="number">
-43
+					43
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-101.07
+					101.07
 				</div>
 				<div class="name">
-Ru
+					Ru
 				</div>
 				<div class="number">
-44
+					44
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-102.91
+					102.91
 				</div>
 				<div class="name">
-Rh
+					Rh
 				</div>
 				<div class="number">
-45
+					45
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-106.42
+					106.42
 				</div>
 				<div class="name">
-Pd
+					Pd
 				</div>
 				<div class="number">
-46
+					46
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-107.87
+					107.87
 				</div>
 				<div class="name">
-Ag
+					Ag
 				</div>
 				<div class="number">
-47
+					47
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-112.41
+					112.41
 				</div>
 				<div class="name">
-Cd
+					Cd
 				</div>
 				<div class="number">
-48
+					48
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-114.82
+					114.82
 				</div>
 				<div class="name">
-In
+					In
 				</div>
 				<div class="number">
-49
+					49
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-118.71
+					118.71
 				</div>
 				<div class="name">
-Sn
+					Sn
 				</div>
 				<div class="number">
-50
+					50
 				</div>
 			</div>
 			<div class="elem metaloid">
 				<div class="atomic">
-121.76
+					121.76
 				</div>
 				<div class="name">
-Sb
+					Sb
 				</div>
 				<div class="number">
-51
+					51
 				</div>
 			</div>
 			<div class="elem metaloid">
 				<div class="atomic">
-127.60
+					127.60
 				</div>
 				<div class="name">
-Te
+					Te
 				</div>
 				<div class="number">
-52
+					52
 				</div>
 			</div>
 			<div class="elem halogene">
 				<div class="atomic">
-126.90
+					126.90
 				</div>
 				<div class="name">
-I
+					I
 				</div>
 				<div class="number">
-53
+					53
 				</div>
 			</div>
 			<div class="elem noble-gaz">
@@ -476,410 +519,748 @@ I
 					131.29
 				</div>
 				<div class="name">
-Xe
+					Xe
 				</div>
 				<div class="number">
-54
+					54
 				</div>
 			</div>
 		</div>
 		<div class="line">
 			<div class="elem alcaline-metal">
 				<div class="atomic">
-132.91
+					132.91
 				</div>
 				<div class="name">
-Cs
+					Cs
 				</div>
 				<div class="number">
-55
+					55
 				</div>
 			</div>
 			<div class="elem earth-alcaline">
 				<div class="atomic">
-137.33
+					137.33
 				</div>
 				<div class="name">
-Ba
+					Ba
 				</div>
 				<div class="number">
-56
+					56
 				</div>
 			</div>
-			<div class="elem links">
+			<div class="elem links lanthanide">
 				<div class="atomic">
 
 				</div>
 				<div class="name">
-La-Lu
+					La-Lu
 				</div>
 				<div class="number">
-57-71
+					57-71
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-178.49
+					178.49
 				</div>
 				<div class="name">
-Hf
+					Hf
 				</div>
 				<div class="number">
-72
+					72
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-180.95
+					180.95
 				</div>
 				<div class="name">
-Ta
+					Ta
 				</div>
 				<div class="number">
-73
+					73
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-183.84
+					183.84
 				</div>
 				<div class="name">
-W
+					W
 				</div>
 				<div class="number">
-74
+					74
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-186.21
+					186.21
 				</div>
 				<div class="name">
-Re
+					Re
 				</div>
 				<div class="number">
-75
+					75
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-190.23
+					190.23
 				</div>
 				<div class="name">
-Os
+					Os
 				</div>
 				<div class="number">
-76
+					76
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-192.22
+					192.22
 				</div>
 				<div class="name">
-Ir
+					Ir
 				</div>
 				<div class="number">
-77
+					77
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-195.08
+					195.08
 				</div>
 				<div class="name">
-Pt
+					Pt
 				</div>
 				<div class="number">
-78
+					78
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-196.97
+					196.97
 				</div>
 				<div class="name">
-Au
+					Au
 				</div>
 				<div class="number">
-79
+					79
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-200.59
+					200.59
 				</div>
 				<div class="name">
-Hg
+					Hg
 				</div>
 				<div class="number">
-80
+					80
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-204.38
+					204.38
 				</div>
 				<div class="name">
-Tl
+					Tl
 				</div>
 				<div class="number">
-81
+					81
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-207.2
+					207.2
 				</div>
 				<div class="name">
-Pb
+					Pb
 				</div>
 				<div class="number">
-82
+					82
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-208.98
+					208.98
 				</div>
 				<div class="name">
-Bi
+					Bi
 				</div>
 				<div class="number">
-83
+					83
 				</div>
 			</div>
 			<div class="elem metaloid">
 				<div class="atomic">
-208.98
+					208.98
 				</div>
 				<div class="name">
-Po
+					Po
 				</div>
 				<div class="number">
-84
+					84
 				</div>
 			</div>
 			<div class="elem halogene">
 				<div class="atomic">
-209.99
+					209.99
 				</div>
 				<div class="name">
-At
+					At
 				</div>
 				<div class="number">
-85
+					85
 				</div>
 			</div>
 			<div class="elem noble-gaz">
 				<div class="atomic">
-222.02
+					222.02
 				</div>
 				<div class="name">
-Rn
+					Rn
 				</div>
 				<div class="number">
-86
+					86
 				</div>
 			</div>
 		</div>
 		<div class="line">
 			<div class="elem alcaline-metal">
 				<div class="atomic">
-223.02
+					223.02
 				</div>
 				<div class="name">
-Fr
+					Fr
 				</div>
 				<div class="number">
-87
+					87
 				</div>
 			</div>
 			<div class="elem earth-alcaline">
 				<div class="atomic">
-226.03
+					226.03
 				</div>
 				<div class="name">
-Ra
+					Ra
 				</div>
 				<div class="number">
-88
+					88
 				</div>
 			</div>
-			<div class="elem links">
+			<div class="elem links actinide">
 				<div class="atomic">
 
 				</div>
 				<div class="name">
-Ac-Lr
+					Ac-Lr
 				</div>
 				<div class="number">
-89-103
+					89-103
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-261
+					261
 				</div>
 				<div class="name">
-Rf
+					Rf
 				</div>
 				<div class="number">
-104.11
+					104.11
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-262
+					262
 				</div>
 				<div class="name">
-Db
+					Db
 				</div>
 				<div class="number">
-105.11
+					105.11
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-266.12
+					266.12
 				</div>
 				<div class="name">
-Sg
+					Sg
 				</div>
 				<div class="number">
-106
+					106
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-264.12
+					264.12
 				</div>
 				<div class="name">
-Bh
+					Bh
 				</div>
 				<div class="number">
-107
+					107
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-269.13
+					269.13
 				</div>
 				<div class="name">
-Hs
+					Hs
 				</div>
 				<div class="number">
-108
+					108
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-268.14
+					268.14
 				</div>
 				<div class="name">
-Mt
+					Mt
 				</div>
 				<div class="number">
-109
+					109
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-272.15
+					272.15
 				</div>
 				<div class="name">
-Ds
+					Ds
 				</div>
 				<div class="number">
-110
+					110
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-272.15
+					272.15
 				</div>
 				<div class="name">
-Rg
+					Rg
 				</div>
 				<div class="number">
-111
+					111
 				</div>
 			</div>
 			<div class="elem">
 				<div class="atomic">
-277
+					277
 				</div>
 				<div class="name">
-Cn
+					Cn
 				</div>
 				<div class="number">
-112
+					112
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-284
+					284
 				</div>
 				<div class="name">
-Uut
+					Uut
 				</div>
 				<div class="number">
-113
+					113
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-289
+					289
 				</div>
 				<div class="name">
-Fl
+					Fl
 				</div>
 				<div class="number">
-114
+					114
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-288
+					288
 				</div>
 				<div class="name">
-Uup
+					Uup
 				</div>
 				<div class="number">
-115
+					115
 				</div>
 			</div>
 			<div class="elem pt-metal">
 				<div class="atomic">
-292
+					292
 				</div>
 				<div class="name">
-Lv
+					Lv
 				</div>
 				<div class="number">
-116
+					116
 				</div>
 			</div>
 			<div class="elem halogene">
 				<div class="atomic">
-292
+					292
 				</div>
 				<div class="name">
-Uus
+					Uus
 				</div>
 				<div class="number">
-117
+					117
 				</div>
 			</div>
 			<div class="elem noble-gaz">
 				<div class="atomic">
-294
+					294
 				</div>
 				<div class="name">
-Uuo
+					Uuo
 				</div>
 				<div class="number">
-118
+					118
+				</div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="lanthanide-line">
+				<div class="elem">
+					<div class="atomic">
+						138.91
+					</div>
+					<div class="name">
+						La
+					</div>
+					<div class="number">
+						57
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						140.11
+					</div>
+					<div class="name">
+						Ce
+					</div>
+					<div class="number">
+						58
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						140.91
+					</div>
+					<div class="name">
+						Pr
+					</div>
+					<div class="number">
+						59
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						144.24
+					</div>
+					<div class="name">
+						Nd
+					</div>
+					<div class="number">
+						60
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						144.91
+					</div>
+					<div class="name">
+						Pm
+					</div>
+					<div class="number">
+						61
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						150.36
+					</div>
+					<div class="name">
+						Sm
+					</div>
+					<div class="number">
+						62
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						151.96
+					</div>
+					<div class="name">
+						Eu
+					</div>
+					<div class="number">
+						63
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						157.25
+					</div>
+					<div class="name">
+						Gd
+					</div>
+					<div class="number">
+						64
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						158.93
+					</div>
+					<div class="name">
+						Tb
+					</div>
+					<div class="number">
+						65
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						162.50
+					</div>
+					<div class="name">
+						Dy
+					</div>
+					<div class="number">
+						66
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						164.93
+					</div>
+					<div class="name">
+						Ho
+					</div>
+					<div class="number">
+						67
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						167.26
+					</div>
+					<div class="name">
+						Er
+					</div>
+					<div class="number">
+						68
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						168.93
+					</div>
+					<div class="name">
+						Tm
+					</div>
+					<div class="number">
+						69
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						173.04
+					</div>
+					<div class="name">
+						Yb
+					</div>
+					<div class="number">
+						70
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						174.97
+					</div>
+					<div class="name">
+						Lu
+					</div>
+					<div class="number">
+						71
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="actinide-line">
+				<div class="elem">
+					<div class="atomic">
+						227.03
+					</div>
+					<div class="name">
+						Ac
+					</div>
+					<div class="number">
+						89
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						232.04
+					</div>
+					<div class="name">
+						Th
+					</div>
+					<div class="number">
+						90
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						231.04
+					</div>
+					<div class="name">
+						Pa
+					</div>
+					<div class="number">
+						91
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						238.03
+					</div>
+					<div class="name">
+						U
+					</div>
+					<div class="number">
+						92
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						237.05
+					</div>
+					<div class="name">
+						Np
+					</div>
+					<div class="number">
+						93
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						244.06
+					</div>
+					<div class="name">
+						Pu
+					</div>
+					<div class="number">
+						94
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						243.06
+					</div>
+					<div class="name">
+						Am
+					</div>
+					<div class="number">
+						95
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						247.07
+					</div>
+					<div class="name">
+						Cm
+					</div>
+					<div class="number">
+						96
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						247.07
+					</div>
+					<div class="name">
+						Bk
+					</div>
+					<div class="number">
+						97
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						251.08
+					</div>
+					<div class="name">
+						Cf
+					</div>
+					<div class="number">
+						98
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						252.08
+					</div>
+					<div class="name">
+						Es
+					</div>
+					<div class="number">
+						99
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						257.10
+					</div>
+					<div class="name">
+						Fm
+					</div>
+					<div class="number">
+						100
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						258.10
+					</div>
+					<div class="name">
+						Md
+					</div>
+					<div class="number">
+						101
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						259.10
+					</div>
+					<div class="name">
+						No
+					</div>
+					<div class="number">
+						102
+					</div>
+				</div>
+				<div class="elem">
+					<div class="atomic">
+						262.11
+					</div>
+					<div class="name">
+						Lr
+					</div>
+					<div class="number">
+						103
+					</div>
 				</div>
 			</div>
 		</div>
