@@ -1,32 +1,41 @@
 <!doctype html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="doft.css">
-		<title>Day of the 42</title>
-	</head>
-	<body>
-		<div class="menu" id="header">
-			<img src="resources/day_of_the_42.png" alt="banner" id="day_of_the_42">
-			<img src="resources/loupe.png" alt="loupe" id="loupe">
-			<a href="http://www.disney.fr"><img src="resources/reload.png" alt="Recommencer au début" id="reload"></a>
-			<a href="http://www.relaischateaux.com"><img src="resources/close.gif" alt="Déconnecter" id="close"></a>
-		</div>
-		</br>
-		<div id="left" class="menu">
-			<img src="resources/arrow.png" alt="Avancer" id="avancer">
-			<img src="resources/main.png" alt="Prendre" id="prendre">
-			<img src="resources/oeil.png" alt="Regarder" id="regarder">
-			<img src="resources/outil.png" alt="Utiliser" id="utiliser">
-			<img src="resources/chat-icon.png" alt="Parler" id="parler">
-		</div>
-		<div id="center-frame" class="menu">
-			<img src="resources/cluster.jpg" id="cluster" alt="photo d'un cluster">
-		</div>
-		<div id="right" class="menu">
-			<img src="resources/book.png" alt="Le Guide" id="guide">
-			<img src="resources/towel.png" alt="Serviette" id="serviette">
-			<img src="resources/brick.jpg" alt="Mur" id="mur">
-		</div>
-	</body>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="doft.css">
+<title>Day of the 42</title>
+</head>
+<body>
+<div class="menu" id="header">
+<img src="resources/day_of_the_42.png" alt="banner" id="day_of_the_42">
+<img src="resources/loupe.png" alt="loupe" id="loupe">
+<a href="http://www.disney.fr"><img src="resources/reload.png" alt="Recommencer au début" id="reload"></a>
+<a href="http://www.relaischateaux.com"><img src="resources/close.gif" alt="Déconnecter" id="close"></a>
+</div>
+<div id="left" class="menu">
+<img src="resources/arrow.png" alt="Avancer" id="avancer">
+<img src="resources/main.png" alt="Prendre" id="prendre">
+<img src="resources/oeil.png" alt="Regarder" id="regarder">
+<img src="resources/outil.png" alt="Utiliser" id="utiliser">
+<img src="resources/chat-icon.png" alt="Parler" id="parler">
+</div>
+<div id="center-frame" class="menu">
+<img src="resources/cluster.jpg" id="cluster" alt="photo d'un cluster">
+<a href="http://www.ikea.com" id="chaise">chaise</a>
+<a href="http://www.apple.com" id="mac">mac</a>
+</div>
+<div id="right" class="menu">
+<img src="resources/book.png" alt="Le Guide" id="guide">
+<img src="resources/towel.png" alt="Serviette" id="serviette">
+<div title="mur" id="mur"></div>
+</div>
+<div id="interface" class="menu">
+<p>Vous <span id="verb">entrez</span> alors dans une grande piece remplie d'<span id="ordi">ordinateurs</span>...</p>
+<p>- Bonjour, vous êtes nouveau ici ?</p>
+<form>
+<input type="text" id="action" name="action">
+<input type="submit" value="Repondre">
+</form>
+</div>
+</body>
 </html>
