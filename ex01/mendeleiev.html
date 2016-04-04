@@ -13,19 +13,27 @@ float:right;
 			border-style: solid;
 			border-color: black;
 			width: 60px;
-			heigth: 60px;
+			height: 75px;
 			display:inline-block;
 			background-color:rgb(255,192,192);
+			vertical-align:top;
+			position:relative;
 			}
 			.name {
 			text-align: center;
 			font-size: 200%;
 			}
-			.number {
-			text-align: top;
+			.links .name {
+			font-size: 150%;
+			position: absolute;
+			bottom:25px;;
 			}
 			.atomic {
 			text-align: right;
+			}
+			.number {
+			position: absolute;
+			bottom:0;
 			}
 			.diatomic-non-metal {
 			background-color:rgb(160,255,160);
@@ -498,7 +506,7 @@ Ba
 56
 				</div>
 			</div>
-			<div class="elem">
+			<div class="elem links">
 				<div class="atomic">
 
 				</div>
@@ -698,7 +706,7 @@ Ra
 88
 				</div>
 			</div>
-			<div class="elem">
+			<div class="elem links">
 				<div class="atomic">
 
 				</div>
