@@ -1,0 +1,109 @@
+.presentation {
+    position:relative;
+    width:1255px;
+    height:350px;
+    display:inline-block;
+    box-sizing: border-box;
+    }
+    .quote {
+        display:inline-block;
+        width:600px;
+        position:absolute;
+        right:260px;
+        font-size:300%;
+        font-style:italic;
+        text-align:justify;
+        font-family:serif;
+    }
+    img {
+        display:inline-block;
+        position:absolute;
+        right:0px;
+    }
+    .sign {
+        text-align:right;
+    }
+    .line {
+        display:block;
+        //width:1255px;
+        width:100%;
+        left:0;
+    }
+    .rgt-part , .actinide-line, .lanthanide-line {
+        //position:absolute;
+//right:0px;
+float:right;
+    }
+    .actinide-line, .lanthanide-line {
+        margin-top:20px;
+        width:100%;
+    }
+    .elem {
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: black;
+        width: 5%;
+        height: 75px;
+        display:inline-block;
+        background-color:rgb(255,192,192);
+        vertical-align:top;
+        position:relative;
+        float:left;
+    }
+    .name {
+        text-align: center;
+        font-size: 200%;
+    }
+    .links .name {
+        font-size: 150%;
+        position: absolute;
+        bottom:25px;;
+    }
+    .atomic {
+        text-align: right;
+    }
+    .number {
+        position: absolute;
+        bottom:0;
+    }
+    .diatomic-non-metal {
+        background-color:rgb(160,255,160);
+    }
+    .noble-gaz {
+        background-color:rgb(192,255,255);
+    }
+    .halogene {
+        background-color:rgb(255,255,153);
+    }
+    .alcaline-metal {
+        background-color:rgb(255,102,102);
+    }
+    .earth-alcaline {
+        background-color:rgb(255,222,173);
+    }
+    .metaloid {
+        background-color:rgb(204,204,153);
+    }
+    .pt-metal {
+        background-color:rgb(204,204,204);
+    }
+    .lanthanide-line .elem , .lanthanide{
+        background-color:rgb(255,191,255);
+    }
+    .actinide-line .elem , .actinide{
+        background-color:rgb(255,153,204);
+    }
+    .lanthanide-line , .actinide-line {
+        float:right;
+    }
+    #he {
+left:85%;
+    }
+    #b {
+left:60%;
+    }
+    .fill {
+font-size:0;
+border:none;
+background-color:white;
+    }
