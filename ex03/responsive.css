@@ -1,27 +1,30 @@
+    div {
+        font-size: 1vw;
+    }
 .presentation {
-    position:relative;
-    width:1255px;
-    height:350px;
+    width:100%;
+    height:auto;
     display:inline-block;
     box-sizing: border-box;
     }
     .quote {
-        display:inline-block;
-        width:600px;
-        position:absolute;
-        right:260px;
-        font-size:300%;
+        float:left;
+        width:83.35%;
+        font-size:3vw;
         font-style:italic;
+    box-sizing: border-box;
         text-align:justify;
         font-family:serif;
     }
     img {
+        width:16.65%;
         display:inline-block;
-        position:absolute;
-        right:0px;
+    box-sizing: border-box;
+        height: auto;
     }
     .sign {
         text-align:right;
+        font-size:3vw;
     }
     .line {
         display:block;
@@ -30,8 +33,6 @@
         left:0;
     }
     .rgt-part , .actinide-line, .lanthanide-line {
-        //position:absolute;
-//right:0px;
 float:right;
     }
     .actinide-line, .lanthanide-line {
@@ -42,7 +43,7 @@ float:right;
         box-sizing: border-box;
         border-style: solid;
         border-color: black;
-        width: 5%;
+        width: 5.55%;
         height: 75px;
         display:inline-block;
         background-color:rgb(255,192,192);
@@ -52,12 +53,12 @@ float:right;
     }
     .name {
         text-align: center;
-        font-size: 200%;
+        font-size: 2vw;
     }
     .links .name {
-        font-size: 150%;
+        font-size: 1.5vw;
         position: absolute;
-        bottom:25px;;
+        bottom:25px;
     }
     .atomic {
         text-align: right;
@@ -95,12 +96,6 @@ float:right;
     }
     .lanthanide-line , .actinide-line {
         float:right;
-    }
-    #he {
-left:85%;
-    }
-    #b {
-left:60%;
     }
     .fill {
 font-size:0;
